@@ -1,0 +1,55 @@
+/* Hier hoef je niks mee te doen */
+* {
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 800px;
+    height: 500px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+/* Hieronder kun je gaan editen */
+
+
+#deel-1 {
+    height: 250px;
+    width: 800px;
+    background-color: red;
+}
+
+#deel-2 {
+    height: 250px;
+    width: 800px;
+    background-color: red;
+}
+
+#links1, #links2 {
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+}
+
+#rechts1, #rechts2 {
+    height: 250px;
+    width: 550px;
+    display: inline-block;
+}
+
+.onder {
+    border-bottom: solid 20px white;
+}
+
+.rechts {
+    border-right: solid 20px white;
+}
+
+.links {
+    border-left: solid 20px white;
+}
+
+.boven {
+    border-top: solid 20px white;
+}

@@ -1,0 +1,62 @@
+/* Hier hoef je niks mee te doen */
+* {
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 800px;
+    height: 500px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+/* Hieronder kun je gaan editen */
+
+
+#deel-1 {
+    height: 250px;
+    width: 800px;
+    margin-bottom: 50px
+}
+
+#deel-2 {
+    height: 250px;
+    width: 800px;
+}
+
+#links1, #links2 {
+    height: 200px;
+    width: 250px;
+    margin-right: 50px;
+    background: none;
+    display: inline-block;
+    background-color: red;
+}
+
+#links1, #rechts1 {
+    height: 250px !important;
+}
+
+#rechts1, #rechts2 {
+    height: 200px;
+    width: 500px;
+    display: inline-block;
+    background-color: red;
+}
+
+.onder {
+    border-bottom: solid 20px white;
+}
+
+.rechts {
+    border-right: solid 20px white;
+}
+
+.links {
+    border-left: solid 20px white;
+}
+
+.boven {
+    border-top: solid 20px white;
+}

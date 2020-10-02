@@ -13,16 +13,20 @@
 /* Hieronder kun je gaan editen */
 
 #bovenkant {
+    height: 225px;
     width: 800px;
-    height: 250px;
-    background-color: white;
-    display: block;
+    background-color: yellow;
 }
 
+#midden {
+    height: 137px;
+    width: 800px;
+    background-color: blue;
+}
 
 #onderkant {
+    height: 138px;
     width: 800px;
-    height: 250px;
     background-color: red;
 }
 

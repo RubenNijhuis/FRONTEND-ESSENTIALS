@@ -1,0 +1,39 @@
+/* Hier hoef je niks mee te doen */
+* {
+    font-size: 0;
+}
+
+#container {
+    width: 800px;
+    height: 500px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+/* Hieronder kun je gaan editen */
+
+
+#deel-1 {
+    height: 500px;
+    width: 250px;
+    background-color: green;
+    display: inline-block;
+}
+
+#deel-twee-container {
+    height: 500px;
+    width: 550px;
+    display: inline-block;
+}
+
+#midden {
+    height: 250px;
+    width: 550px;
+    background-color: yellow;
+}
+
+#onderkant {
+    height: 250px;
+    width: 550px;
+    background-color: red;
+}
