@@ -1,38 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="container status">
-        
-    </div>
-    <div class="container">
-        <div class="col">
-            <div class="button" id="eten"><span>Geef eten</span></div>
-            <div class="button" id="drinken"><span>Geef Drinken</span></div>
-            <div class="button" id="aaien"><span>Aaien</span></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <a href="../Mondriaan/index.html">Mondriaan</a
+            ><a href="../Vlaggen">Vlaggen</a>
+        </nav>
+        <h1 class="voornaam"></h1>
+        <h1 class="achternaam"></h1>
+        <div class="container status"></div>
+        <div class="container">
+            <div class="col">
+                <div class="button" id="eten"><span>Geef eten</span></div>
+                <div class="button" id="drinken"><span>Geef Drinken</span></div>
+                <div class="button" id="aaien"><span>Aaien</span></div>
+            </div>
+            <div class="col"></div>
+            <div class="response"></div>
         </div>
-        <div class="col">
-        </div>
-        <div class="response"></div>
-    </div>
-    <script>
-        
-        let persoon = {
-            voornaam : prompt("Wat is je naam?"),
-            achternaam : prompt("Wat is je achternaam?"),
-            leeftijd : prompt("Wat is je leeftijd?"),
-        };
+        <table>
+            <tr>
+                <td>Voornaam</td>
+                <td>Achternaam</td>
+                <td>Leeftijd</td>
+                <td>E-mail</td>
+                <td>Woonplaats</td>
+            </tr>
+            <tr>
+                <td class="voornaam">Voornaam</td>
+                <td class="achternaam">Achternaam</td>
+                <td class="leeftijd">Leeftijd</td>
+                <td class="email">E-mail</td>
+                <td class="woonplaats">Woonplaats</td>
+            </tr>
+        </table>
+        <script>
+            let persoon = {
+                voornaam: prompt("Wat is je naam?"),
+                achternaam: prompt("Wat is je achternaam?"),
+                leeftijd: prompt("Wat is je leeftijd?"),
+                email: prompt("Wat is je e-mail"),
+                woonplaats: prompt("Waar woon je?"),
+            };
 
+            const voornaam = document.getElementsByClassName("voornaam");
+            const achternaam = document.getElementsByClassName("achternaam");
+            const leeftijd = document.querySelector(".leeftijd");
+            const email = document.querySelector(".email");
+            const woonplaats = document.querySelector(".woonplaats");
 
+            voornaam[0].innerText = persoon.voornaam;
+            achternaam[0].innerText = persoon.achternaam;
 
-        
-        
-    </script>
-</body>
+            voornaam[1].innerText = persoon.voornaam;
+            achternaam[1].innerText = persoon.achternaam;
+
+            leeftijd.innerText = persoon.leeftijd;
+            email.innerText = persoon.email;
+            woonplaats.innerText = persoon.woonplaats;
+
+            console.log("/////////////");
+            console.log(persoon);
+
+            const body = document.querySelector("body");
+
+            switch (persoon.leeftijd) {
+                case "16":
+                    body.style.background = "orange";
+                    break;
+                case "17":
+                    body.style.background = "blue";
+                    break;
+                case "18":
+                    body.style.background = "#FFDF00";
+                    break;
+                case "19":
+                    body.style.background = "green";
+                    break;
+                default:
+                    body.style.background = "firebrick";
+            }
+        </script>
+    </body>
 </html>

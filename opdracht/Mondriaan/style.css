@@ -1,4 +1,4 @@
-div{
+div {
     /* Zorgt ervoor dat de border aan de binnenkant van alle divs wordt geplaats en niet wordt opgeteld bij de breedte/hoogte van het element*/
     /* hierdoor voorkom je dat je als je het element een bepaalde breedte/hoogte geeft rekening moet houden met de border breedte */
     box-sizing: border-box;
@@ -7,114 +7,189 @@ div{
 }
 
 /* Container div waar de hele mondriaan in zit */
-#container{
+#container {
     width: 800px;
     height: 800px;
     border: 1px solid black;
 }
 
 /* CSS class voor achtergrond die niet zichtbaar is voor het eindresultaat */
-.bg-temp{
-    background-image: repeating-linear-gradient(-45deg, grey,white);
+.bg-temp {
+    background-image: repeating-linear-gradient(-45deg, grey, white);
 }
 
-.horizontaal{
+.horizontaal {
     display: inline-block;
 }
 
 /* CSS classes die de borders regelen */
-.border-boven{
+.border-boven {
     border-top: 15px solid black;
 }
 
-.border-links{
+.border-links {
     border-left: 15px solid black;
 }
 
-.border-rechts{
+.border-rechts {
     border-right: 15px solid black;
 }
 
-.border-beneden{
+.border-beneden {
     border-bottom: 15px solid black;
 }
 
 /* CSS Classes die de achtergrond kleur regelen */
-.bg-geel{
+.bg-geel {
     background-color: yellow;
 }
 
-.bg-blauw{
+.bg-blauw {
     background-color: cornflowerblue;
 }
 
-.bg-rood{
+.bg-rood {
     background-color: red;
 }
 
-.bg-wit{
+.bg-wit {
     background-color: white;
 }
 
 
 /* Linkerkant */
-#links{
+#links {
     width: 20%;
     height: 100%;
 }
 
-#links-boven{
+#links-boven {
     width: 100%;
     height: 25%;
 }
-#links-midden{
+
+#links-midden {
     width: 100%;
     height: 50%;
 }
-#links-beneden{
+
+#links-beneden {
     width: 100%;
     height: 25%;
 }
 
- /* Rechterkant */
-#rechts{
+/* Rechterkant */
+#rechts {
     width: 80%;
     height: 100%;
+    position: relative;
 }
 
 /* Rechtskant eerste rij */
-#rechts-rij-een{
+#rechts-rij-een {
     height: 25%;
     width: 100%;
+    position: absolute;
 }
 
-    #rechts-rij-een-links{
-        height: 100%;
-        width: 60%;
-    }
+#rechts-rij-een-links {
+    height: 100%;
+    width: 60%;
+    display: inline-block;
+}
 
-    #rechts-rij-een-rechts{
-        height: 100%;
-        width: 40%;
-    }
+#rechts-rij-een-rechts {
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+}
 
 /* Rechtskant tweede rij */
-#rechts-rij-twee{
+#rechts-rij-twee {
     height: 22%;
     width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+#rechts-rij-twee-links {
+    height: 100%;
+    width: 75%;
+    display: inline-block;
+}
+
+#rechts-rij-twee-rechts {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
 }
 
 /* Rechtskant derde rij */
-#rechts-rij-drie{
+#rechts-rij-drie {
     height: 22%;
     width: 100%;
+    position: absolute;
+    top: 47%;
+}
+
+#rechts-rij-drie-een {
+    height: 100%;
+    width: 10%;
+    display: inline-block;
+}
+
+#rechts-rij-drie-twee {
+    height: 100%;
+    width: 35%;
+    display: inline-block;
+}
+
+#rechts-rij-drie-drie {
+    height: 100%;
+    width: 30%;
+    display: inline-block;
+}
+
+#rechts-rij-drie-vier {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
 }
 
 /* Rechtskant vierde rij */
-#rechts-rij-vier{
+#rechts-rij-vier {
     height: 31%;
     width: 100%;
+    position: absolute;
+    top: 69%;
 }
 
+#rechts-rij-vier-een {
+    height: 100%;
+    width: 45%;
+    display: inline-block;
+}
 
+#rechts-rij-vier-twee {
+    height: 100%;
+    width: 30%;
+    display: inline-block;
+}
 
+#rechts-rij-vier-drie {
+    height: 65%;
+    width: 25%;
+    display: inline-block;
+    top: 60;
+    right: 0;
+    position: absolute;
+}
+
+#rechts-rij-vier-vier {
+    height: 35%;
+    width: 25%;
+    display: inline-block;
+    top: 160px;
+    right: 0;
+    position: absolute;
+}
